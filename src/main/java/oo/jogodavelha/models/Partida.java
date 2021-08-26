@@ -30,23 +30,28 @@ public class Partida {
 
 			// Se simbolo for invalido chama a funcao de novo
 			if (simbolo != 'X' && simbolo != 'O' || simbolo == jogadaAnterior) {
-				System.err.println("\n[ERRO] Simbolo invalido.");
 				aux = true;
+				System.err.println("\n[ERRO] Simbolo invalido.");
+				ExcecaoPorSimboloInvalido s = new ExcecaoPorSimboloInvalido();
+				throw s;
 			} else {
 				aux = false;
 			}
+			
 		} while (aux);
 
 		do {
-
+			
 			System.out.print("Coordenada [X Y]: ");
 			cX = teclado.nextInt();
 			cY = teclado.nextInt();
 
 			// Se posicao for invalida chama a funcao de novo
 			if (cX < 0 || cX > 2 || cY < 0 || cY > 2 || (cX == xAnt && cY == yAnt)) {
-				System.err.println("\n[ERRO] PosiÃ§Ã£o invalida.");
 				aux = true;
+				System.err.println("\n[ERRO] Posição inválida.");
+				ExcecaoPorCoordenadaInvalida c = new ExcecaoPorCoordenadaInvalida();
+				throw c;
 			} else {
 				aux = false;
 			}
@@ -62,12 +67,20 @@ public class Partida {
 
 	}
 
-	public Partida() throws ExcecaoPorCoordenadaInvalida, ExcecaoPorSimboloInvalido {
-		boolean vencedor = false;
-		while (!vencedor) {
+	public Partida() throws ExcecaoPorCoordenadaInvalida, ExcecaoPorSimboloInvalido{
+		int vez = 0;
+		while(vez < 9) {
 			umaJogada();
-			vencedor = g.hasWinner();
+			vez++;
+			if(g.hasWinner()) {
+				break;
+			}
 		}
+//		boolean vencedor = false;
+//		while (!vencedor) {
+//			umaJogada();
+//			vencedor = g.hasWinner();
+//		}
 	}
 
 }

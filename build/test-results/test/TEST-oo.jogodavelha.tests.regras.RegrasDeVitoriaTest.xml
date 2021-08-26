@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" tests="14" skipped="0" failures="14" errors="0" timestamp="2021-08-26T19:32:24" hostname="LAPTOP-6LCBV545" time="0.1">
+<testsuite name="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" tests="14" skipped="0" failures="14" errors="0" timestamp="2021-08-26T21:03:11" hostname="LAPTOP-6LCBV545" time="0.045">
   <properties/>
-  <testcase name="testHasWinnerDiagonal1()" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.003">
+  <testcase name="testHasWinnerDiagonal1()" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerDiagonal1(RegrasDeVitoriaTest.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -90,9 +90,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="testHasWinnerDiagonal2()" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
+  <testcase name="testHasWinnerDiagonal2()" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerDiagonal2(RegrasDeVitoriaTest.java:90)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -179,9 +179,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[1] 0, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.007">
+  <testcase name="[1] 0, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerVertical(RegrasDeVitoriaTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -323,7 +323,7 @@
   </testcase>
   <testcase name="[2] 0, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerVertical(RegrasDeVitoriaTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -463,9 +463,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[3] 1, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.003">
+  <testcase name="[3] 1, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerVertical(RegrasDeVitoriaTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -605,9 +605,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[4] 1, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
+  <testcase name="[4] 1, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerVertical(RegrasDeVitoriaTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -747,9 +747,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[5] 2, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
+  <testcase name="[5] 2, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerVertical(RegrasDeVitoriaTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -891,7 +891,7 @@
   </testcase>
   <testcase name="[6] 2, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerVertical(RegrasDeVitoriaTest.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1031,9 +1031,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[1] 0, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.008">
+  <testcase name="[1] 0, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerHorizontal(RegrasDeVitoriaTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1173,9 +1173,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[2] 0, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
+  <testcase name="[2] 0, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerHorizontal(RegrasDeVitoriaTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1315,9 +1315,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[3] 1, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
+  <testcase name="[3] 1, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerHorizontal(RegrasDeVitoriaTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1459,7 +1459,7 @@
   </testcase>
   <testcase name="[4] 1, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerHorizontal(RegrasDeVitoriaTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1599,9 +1599,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[5] 2, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
+  <testcase name="[5] 2, X" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.002">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerHorizontal(RegrasDeVitoriaTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1741,9 +1741,9 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <testcase name="[6] 2, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.012">
+  <testcase name="[6] 2, O" classname="oo.jogodavelha.tests.regras.RegrasDeVitoriaTest" time="0.001">
     <failure message="java.lang.NullPointerException" type="java.lang.NullPointerException">java.lang.NullPointerException
-	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:60)
+	at oo.jogodavelha.models.Jogo.hasWinner(Jogo.java:80)
 	at oo.jogodavelha.tests.regras.RegrasDeVitoriaTest.testHasWinnerHorizontal(RegrasDeVitoriaTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -1883,6 +1883,20 @@
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </failure>
   </testcase>
-  <system-out><![CDATA[]]></system-out>
+  <system-out><![CDATA[Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+Tabuleiro vazio
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

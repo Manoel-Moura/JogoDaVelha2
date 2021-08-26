@@ -21,14 +21,33 @@ public class Jogo extends Tabuleiro{
 
 	public boolean check(Jogada umaJogada) throws ExcecaoPorCoordenadaInvalida, ExcecaoPorSimboloInvalido  {
 		
-		//teste jogada em coord preenchida
-		if(checkPosition(umaJogada.getCoordenada())) {
-			return true;
-		}else if(validaPosicao(umaJogada.getCoordenada().getX(), umaJogada.getCoordenada().getY())) {
-			return true;
-		}else {
-			return false;
+		int x = umaJogada.getCoordenada().getX();
+		int y = umaJogada.getCoordenada().getY();
+		
+		if(tabuleiro.getTabuleiro().isEmpty()) {
+			System.out.println("Tabuleiro vazio");
+		} else if(umaJogada.getSimbolo().equals(jogadaAnterior)) {
+			if(matrizTabuleiro[x][y].equals('X')|| matrizTabuleiro[x][y].equals('O')){
+				ExcecaoPorCoordenadaInvalida c = new ExcecaoPorCoordenadaInvalida();
+				throw c;
+			}else {
+				ExcecaoPorSimboloInvalido s = new ExcecaoPorSimboloInvalido();
+				throw s;
+			}
 		}
+		return true;
+		
+		
+		
+		//teste jogada em coord preenchida
+//		if(checkPosition(umaJogada.getCoordenada())) {
+//			return true;
+//		}else if(validaPosicao(umaJogada.getCoordenada().getX(), umaJogada.getCoordenada().getY())) {
+//			return true;
+//		}else {
+//			return false;
+//		}
+		
 	}
 
 	
@@ -57,74 +76,82 @@ public class Jogo extends Tabuleiro{
 	
 	public boolean hasWinner(){
 //		tabuleiro.completaMatriz();
+		int teste = 0;
 		if (tabuleiro.getMatrizTabuleiro(0, 0).equals('X') && tabuleiro.getMatrizTabuleiro(0, 1).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(0, 2).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 0).equals('O') && tabuleiro.getMatrizTabuleiro(0, 1).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(0, 2).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(1, 0).equals('X') && tabuleiro.getMatrizTabuleiro(1, 1).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(1, 2).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste =  1;
 		} else if (tabuleiro.getMatrizTabuleiro(1, 0).equals('O') && tabuleiro.getMatrizTabuleiro(1, 1).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(1, 2).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste =  1;
 		} else if (tabuleiro.getMatrizTabuleiro(2, 0).equals('X') && tabuleiro.getMatrizTabuleiro(2, 1).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(2, 2).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(2, 0).equals('O') && tabuleiro.getMatrizTabuleiro(2, 1).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(2, 2).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste =  1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 0).equals('X') && tabuleiro.getMatrizTabuleiro(1, 0).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(2, 0).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 0).equals('O') && tabuleiro.getMatrizTabuleiro(1, 0).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(2, 0).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 1).equals('X') && tabuleiro.getMatrizTabuleiro(1, 1).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(2, 1).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste =  1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 1).equals('O') && tabuleiro.getMatrizTabuleiro(1, 1).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(2, 1).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 2).equals('X') && tabuleiro.getMatrizTabuleiro(1, 2).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(2, 2).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 2).equals('O') && tabuleiro.getMatrizTabuleiro(1, 2).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(2, 2).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 0).equals('X') && tabuleiro.getMatrizTabuleiro(1, 1).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(2, 2).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 0).equals('O') && tabuleiro.getMatrizTabuleiro(1, 1).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(2, 2).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 2).equals('X') && tabuleiro.getMatrizTabuleiro(1, 1).equals('X')
 				&& tabuleiro.getMatrizTabuleiro(2, 0).equals('X')) {
 			System.out.println("\nJogador X ganhou!");
-			return true;
+			teste = 1;
 		} else if (tabuleiro.getMatrizTabuleiro(0, 2).equals('O') && tabuleiro.getMatrizTabuleiro(1, 1).equals('O')
 				&& tabuleiro.getMatrizTabuleiro(2, 0).equals('O')) {
 			System.out.println("\nJogador O ganhou!");
-			return true;
-		} else if (tabuleiro.tamnahoMap() == 9) {
-			System.out.println("\nDeu velha");
-			return true;
+			teste = 1;
 		}
-		return false;
+			
+		if(teste==1) {
+			return true;
+		}else {
+			return false;
+		}
+//		} else if (tabuleiro.tamnahoMap() == 9) {
+//			System.out.println("\nDeu velha");
+//			return true;
+//		}
+		
 	}
 }

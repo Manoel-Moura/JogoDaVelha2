@@ -101,6 +101,8 @@ public class Tabuleiro {
 //		if(!validaPosicao(x, y)) {
 //			throw new ExcecaoPorCoordenadaInvalida();
 //		}
+		
+		
 		if(!checkPosition(umaJogada.getCoordenada())) {
 			throw new ExcecaoPorCoordenadaInvalida();
 		}
