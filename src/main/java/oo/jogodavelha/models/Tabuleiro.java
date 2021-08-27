@@ -29,16 +29,33 @@ public class Tabuleiro {
 		return null;
 
 	}
-	
+
 	//
 	public boolean checkPosition(Coordenada coordenada) {
 
 		for (Coordenada coord : tabuleiro.keySet()) {
 			if (coord.equals(coordenada)) {
-				return false; 
+				return false;
 			}
 		}
 		return true;
+	}
+
+	public boolean teste() {
+		int cont = 0;
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 3; j++) {
+				if (matrizTabuleiro[i][j] == null || matrizTabuleiro[i][j] == '*') {
+					cont++;
+				}
+
+			}
+		}
+		if (cont == 9) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public void preencheMatriz() {
@@ -59,8 +76,8 @@ public class Tabuleiro {
 			}
 		}
 	}
-	
-	//verifica que n foi marcada
+
+	// verifica que n foi marcada
 	public boolean validaPosicao(int x, int y) {
 		if (matrizTabuleiro[x][y] == null || matrizTabuleiro[x][y] == '*') {
 			return true;
@@ -96,20 +113,18 @@ public class Tabuleiro {
 		if (simbolo != 'X' && simbolo != 'O' || simbolo == jogadaAnterior) {
 			throw new ExcecaoPorSimboloInvalido();
 		}
-		
-		//valida posicao retorna false se a posicao for inválida
+
+		// valida posicao retorna false se a posicao for inválida
 //		if(!validaPosicao(x, y)) {
 //			throw new ExcecaoPorCoordenadaInvalida();
 //		}
-		
-		
-		if(!checkPosition(umaJogada.getCoordenada())) {
+
+		if (!checkPosition(umaJogada.getCoordenada())) {
 			throw new ExcecaoPorCoordenadaInvalida();
 		}
-		if (x < 0 || x > 2 || y < 0 || y > 2) {
-			throw new ExcecaoPorCoordenadaInvalida();
-		}
+		
 		tabuleiro.put(umaJogada.coordenada, umaJogada.simbolo);
+		preencheMatriz();
 		jogadaAnterior = simbolo;
 	}
 
